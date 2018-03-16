@@ -23,7 +23,7 @@ div.desc {
     text-align: center;
 }
 
-.column {
+.full {
     float: left;
     width: 100%;
 }
@@ -55,6 +55,7 @@ div.navbar {
 }
 
 div.navbuttons {
+    float: left;
     text-align: center;
     width: 20%;
     color: #ffffff;
@@ -67,6 +68,26 @@ div.navbuttons:hover {
 
 .fonted {
     font-family: Open Sans Light;
+}
+
+a.navbar:link {
+    color: white;
+    text-decoration: none;
+}
+
+a.navbar:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a.navbar:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a.navbar:active {
+    color: white;
+    text-decoration: none;
 }
 
 @font-face {font-family:"After Night";src:url("fonts/After_Night.eot?") format("eot"),url("fonts/After_Night.woff") format("woff"),url("fonts/After_Night.ttf") format("truetype"),url("fonts/After_Night.svg#AfterNight") format("svg");font-weight:normal;font-style:normal;}

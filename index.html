@@ -2,6 +2,21 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBuvIxckDqEO24ARnfw609KKKsYm32cov8",
+    authDomain: "teentalks-c2d56.firebaseapp.com",
+    databaseURL: "https://teentalks-c2d56.firebaseio.com",
+    projectId: "teentalks-c2d56",
+    storageBucket: "teentalks-c2d56.appspot.com",
+    messagingSenderId: "844434525558"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
 <title>Teentalks</title>
 </head>
 <body style="background-color:#ffffff;">
@@ -9,16 +24,26 @@
 <div class="teen"><h1 style="font-family:After Night;font-size: 300%;color:#cc0000;">Teen</h1></div><div class="talk"><h1 style="font-family:After Night;font-size: 300%;color:#060d13;">Talks</h1></div>
 </div>
 <div class="navbar">
-<div class="navbuttons"><h3 style="font-family:Code-Light;">Home</h3></div>
+<div class="navbuttons"><a class="navbar" href="index.html"><h3 style="font-family:Code-Light;">Home</h3></a></div>
+<div class="navbuttons"><a class="navbar" href="https://www.youtube.com/channel/UCFGhVrj4YWOmTE6t4U45HlA?"><h3 style="font-family:Code-Light;">YouTube</h3></a></div>
+<div class="navbuttons"><a class="navbar" href="https://www.instagram.com/teentalks17/"><h3 style="font-family:Code-Light;">Instagram</h3></a></div>
+<div class="navbuttons"><a class="navbar" href="about.html"><h3 style="font-family:Code-Light;">About Us</h3></a></div>
+<div class="navbuttons"><a class="navbar" href="contact.html"><h3 style="font-family:Code-Light;">Contact Us</h3></a></div>
 </div>
 <hr>
 <div class="row">
-<div class="column">
+<div class="full">
 <div class="gallery">
   <a href="https://www.youtube.com/watch?v=UDOeL9UOy7w">
     <img src="images/vid3.jpg" alt="Vid3" width="480" height="360">
   </a>
   <div class="desc"><p class="fonted">Talk@ Spark Career Mentors</p></div>
+</div>
+<div class="gallery">
+  <a href="https://www.youtube.com/watch?v=60MB7PNMQrc">
+    <img src="images/vid3.jpg" alt="Vid2" width="480" height="360">
+  </a>
+  <div class="desc"><p class="fonted">Talk@ E-City</p></div>
 </div>
 </div>
 <hr>

@@ -1,28 +1,46 @@
 <!DOCTYPE html5>
-<html lang="en">
-  <head>
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-  </head>
-  <body>
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
 
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      };
-    </script>
-  </body>
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBuvIxckDqEO24ARnfw609KKKsYm32cov8",
+    authDomain: "teentalks-c2d56.firebaseapp.com",
+    databaseURL: "https://teentalks-c2d56.firebaseio.com",
+    projectId: "teentalks-c2d56",
+    storageBucket: "teentalks-c2d56.appspot.com",
+    messagingSenderId: "844434525558"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+<script src="login.js">
+</script>
+<title>Teentalks</title>
+</head>
+<body style="background-color:#ffffff;">
+<div>
+<div class="teen"><h1 style="font-family:After Night;font-size: 300%;color:#cc0000;">Teen</h1></div><div class="talk"><h1 style="font-family:After Night;font-size: 300%;color:#060d13;">Talks</h1></div>
+</div>
+<div class="navbar">
+<div class="navbuttons"><a class="navbar" href="index.html"><h3 style="font-family:Code-Light;">Home</h3></a></div>
+<div class="navbuttons"><a class="navbar" href="https://www.youtube.com/channel/UCFGhVrj4YWOmTE6t4U45HlA?"><h3 style="font-family:Code-Light;">YouTube</h3></a></div>
+<div class="navbuttons"><a class="navbar" href="https://www.instagram.com/teentalks17/"><h3 style="font-family:Code-Light;">Instagram</h3></a></div>
+<div class="navbuttons"><a class="navbar" href="about.html"><h3 style="font-family:Code-Light;">About Us</h3></a></div>
+<div class="navbuttons"><a class="navbar" href="contact.html"><h3 style="font-family:Code-Light;">Contact Us</h3></a></div>
+</div>
+<hr>
+<div class="full"><h4 style="font-family:Open Sans Light;">Admin Login</h4></div>
+<form action="login.js">
+<p style="font-family:Open Sans Light;">Login ID:</p><br>
+<input type="text" name="email" id="email"><br>
+<p style="font-family:Open Sans Light;">Password:</p><br>
+<input type="text" name="password" id="password"><br><br>
+<button type="button" onclick="firebase.auth().signInWithEmailAndPassword(email, password)">SUBMIT</button>
+</form>
+</body>
 </html>
-
