@@ -50,10 +50,27 @@ div.talk{
 
 div.navbar {
     text-align: center;
-    background-color: #ccccff;
+    background-color: #0d1a26;
     width: 100%;  
 }
 
 div.navbuttons {
-    
+    text-align: center;
+    width: 20%;
+    color: #ffffff;
+    background-color: #0d1a26;
 }
+
+div.navbuttons:hover {
+    background-color: #336699;
+}
+
+.fonted {
+    font-family: Open Sans Light;
+}
+
+@font-face {font-family:"After Night";src:url("fonts/After_Night.eot?") format("eot"),url("fonts/After_Night.woff") format("woff"),url("fonts/After_Night.ttf") format("truetype"),url("fonts/After_Night.svg#AfterNight") format("svg");font-weight:normal;font-style:normal;}
+
+@font-face {font-family:"Code-Light";src:url("fonts/CODE_Light.eot?") format("eot"),url("fonts/CODE_Light.woff") format("woff"),url("fonts/CODE_Light.ttf") format("truetype"),url("fonts/CODE_Light.svg#Code-Light") format("svg");font-weight:normal;font-style:normal;}
+
+@font-face {font-family:"Open Sans Light";src:url("fonts/OpenSans-Light.eot?") format("eot"),url("fonts/OpenSans-Light.woff") format("woff"),url("fonts/OpenSans-Light.ttf") format("truetype"),url("fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");font-weight:normal;font-style:normal;}
