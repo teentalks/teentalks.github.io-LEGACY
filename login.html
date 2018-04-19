@@ -2,24 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
-
-<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBuvIxckDqEO24ARnfw609KKKsYm32cov8",
-    authDomain: "teentalks-c2d56.firebaseapp.com",
-    databaseURL: "https://teentalks-c2d56.firebaseio.com",
-    projectId: "teentalks-c2d56",
-    storageBucket: "teentalks-c2d56.appspot.com",
-    messagingSenderId: "844434525558"
-  };
-  firebase.initializeApp(config);
-</script>
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
-<script src="login.js">
-</script>
+<script src="script.js"></script>
 <title>Teentalks</title>
 </head>
 <body style="background-color:#ffffff;">
@@ -35,12 +18,14 @@
 </div>
 <hr>
 <div class="full"><h4 style="font-family:Open Sans Light;">Admin Login</h4></div>
-<form action="login.js">
+<form action="test.php">
 <p style="font-family:Open Sans Light;">Login ID:</p><br>
-<input type="text" name="email" id="email"><br>
+<input type="text" name="email"><br>
 <p style="font-family:Open Sans Light;">Password:</p><br>
-<input type="text" name="password" id="password"><br><br>
-<button type="button" onclick="firebase.auth().signInWithEmailAndPassword(email, password)">SUBMIT</button>
+<input type="text" name="password"><br><br>
+<input type="Submit" name="Submit"><br>
+<button type="button" onclick="login()">Submit</button>
 </form>
+<p id="test">Test</p>
 </body>
 </html>
