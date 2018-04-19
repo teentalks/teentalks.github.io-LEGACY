@@ -170,6 +170,7 @@ div.columnhome3 {
   bottom: 8px;
   width: 100%;
   text-align: center;
+  font-family: Open Sans Light;
 }
 
 /* Number text (1/3 etc) */
@@ -179,6 +180,7 @@ div.columnhome3 {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  font-family: Open Sans Light;
 }
 
 /* The dots/bullets/indicators */
