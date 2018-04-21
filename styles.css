@@ -2,20 +2,18 @@ body {
   padding: 20px 50px 50px 50px;
 }
 
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+div.gallerycontainer {
+    width: 50%;
+    height: auto;
+    align-content: center;
+    margin: auto;
+    
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
+div.gallerycontainer img{
     width: 100%;
     height: auto;
+    margin:auto;
 }
 
 div.desc {
@@ -69,11 +67,6 @@ li a:visited {
 }
 
 li a:hover {
-    color: dimgray;
-    text-decoration: none;
-}
-
-li a:active {
     color: dimgray;
     text-decoration: none;
 }
