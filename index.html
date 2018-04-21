@@ -2,6 +2,8 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">    
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -14,24 +16,26 @@
 <title>Teentalks</title>
 </head>
 <body onLoad="showSlides(1);" style="background-color:#ffffff;">
-<div>
-<div class="teen"><h1 style="font-family:Cabin Sketch Regular;font-size: 300%;color:#cc0000;">Teen</h1></div><div class="talk"><h1 style="font-family:Cabin Sketch Regular;font-size: 300%;color:#060d13;">Talks</h1></div>
-</div>
-<div class="navbar">
-<div class="navbuttons"><a class="navbar" href="index.html"><h3 style="font-family:Code-Light;">Home</h3></a></div>
-<div class="navbuttons"><a class="navbar" href="https://www.youtube.com/channel/UCFGhVrj4YWOmTE6t4U45HlA?"><h3 style="font-family:Code-Light;">YouTube</h3></a></div>
-<div class="navbuttons"><a class="navbar" href="https://www.instagram.com/teentalks17/"><h3 style="font-family:Code-Light;">Instagram</h3></a></div>
-<div class="navbuttons"><a class="navbar" href="https://www.facebook.com/teentalks17/"><h3 style="font-family:Code-Light;">Facebook</h3></a></div>
-<div class="navbuttons"><a class="navbar" href="blog.html"><h3 style="font-family:Code-Light;">Blog</h3></a></div>
-<div class="navbuttons"><a class="navbar" href="about.html"><h3 style="font-family:Code-Light;">About Us</h3></a></div>
-<div class="navbuttons"><a class="navbar" href="contact.html"><h3 style="font-family:Code-Light;">Contact Us</h3></a></div>
-</div>
+<div class="container">
+    <div class"row">
+        <div class="two columns" style="padding: 35px;"><a href="index.html"><img src="images/dp.jpg" height=100px width=100px></a></div>
+        <div class="ten columns">
+                    <ul class="navbar">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li style="padding-left: 40px; padding-top: 65px;"><a class="button button-primary" href="contact.html">Contact Us</a></li>
+                    </ul>
+        </div>
+    </div>
 <div class="full">
 <div class="row">
     <div class="columnhome2">
       <div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 22</div>
     <img src="images/img1.JPG" style="width:100%">
@@ -156,23 +160,12 @@
        "What is TeenTalks?" at
        Spark Career Mentors</pre>
     </div>
-<!--<div class="gallery">
-  <a href="https://www.youtube.com/watch?v=UDOeL9UOy7w">
-    <img src="images/vid3.jpg" alt="Vid3" width="480" height="360">
-  </a>
-  <div class="desc"><p class="fonted">Talk@ Spark Career Mentors</p></div>
-</div>
-<div class="gallery">
-  <a href="https://www.youtube.com/watch?v=60MB7PNMQrc">
-    <img src="images/Vid2.jpg" alt="Vid2" width="480" height="360">
-  </a>
-  <div class="desc"><p class="fonted">Talk@ E-City</p></div>
-</div> -->
     </div>
     <div class="columnhome3">
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fteentalks17&tabs=timeline&width=400&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
     </div>
     <a href="contact.html" style="font-family: Open Sans Light; font-size:100%; text-decoration: none;">Want to join us?(Photography/Videography/Speaking on other topics)</a>
+</div>
 </div>
 </div>
 </body>

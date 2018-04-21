@@ -28,12 +28,6 @@ div.desc {
     width: 100%;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 div.teen {
     float: left;
     text-align: right;
@@ -48,45 +42,39 @@ div.talk{
     background-color: #cc0000;
 }
 
-div.navbar {
-    text-align: center;
-    background-color: #ffffff;
-    width: 100%;  
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-div.navbuttons {
+li {
     float: left;
+}
+
+li a {
+    display: block;
     text-align: center;
-    width: 14.2857142857%;
-    color: #ffffff;
-    background-color: #0d1a26;
-}
-
-div.navbuttons:hover {
-    background-color: #336699;
-}
-
-.fonted {
+    padding-top: 70px;
+    padding-left: 30px;
+    font-size: 120%;
     font-family: Open Sans Light;
-}
-
-a.navbar:link {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
-a.navbar:visited {
-    color: white;
+li a:visited {
+    color: black;
     text-decoration: none;
 }
 
-a.navbar:hover {
-    color: white;
+li a:hover {
+    color: dimgray;
     text-decoration: none;
 }
 
-a.navbar:active {
-    color: white;
+li a:active {
+    color: dimgray;
     text-decoration: none;
 }
 
