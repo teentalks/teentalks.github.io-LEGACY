@@ -198,6 +198,18 @@ div.columnhome3 {
   to {opacity: 1}
 }
 
+div.blog {
+    font-family: Open Sans Light;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+div.blog:hover {
+    border-color: black;
+}
+
 @font-face {font-family:"After Night";src:url("fonts/After_Night.eot?") format("eot"),url("fonts/After_Night.woff") format("woff"),url("fonts/After_Night.ttf") format("truetype"),url("fonts/After_Night.svg#AfterNight") format("svg");font-weight:normal;font-style:normal;}
 
 @font-face {font-family:"Code-Light";src:url("fonts/CODE_Light.eot?") format("eot"),url("fonts/CODE_Light.woff") format("woff"),url("fonts/CODE_Light.ttf") format("truetype"),url("fonts/CODE_Light.svg#Code-Light") format("svg");font-weight:normal;font-style:normal;}
