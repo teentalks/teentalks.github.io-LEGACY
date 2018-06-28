@@ -1,30 +1,29 @@
 <!DOCTYPE html5>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css"> 
+  <link rel="stylesheet" href="css/skeleton.css">
+<link rel="shortcut icon" href="images/dp.jpg">
 <title>Teentalks</title>
 </head>
 <body>
-<div class="container">
-    <div class"row">
-        <div class="two columns" style="padding: 35px;"><a href="index.html"><img src="images/dp.jpg" height=100px width=100px></a></div>
-        <div class="ten columns">
-                    <ul class="navbar">
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCFGhVrj4YWOmTE6t4U45HlA">Youtube</a></li>
-                        <li><a href="httsp://instagram.com/teentalks17">Instagram</a></li>
-                        <li><a href="https://facebook.com/teentalks17">Facebook</a></li>
-                        <li><a href="https://teentalks2017.wordpress.com/">Blog</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li style="padding-left: 40px; padding-top: 65px;"><a class="button button-primary" href="contact.html">Contact Us</a></li>
-                    </ul>
+    <div class="header">
+        <div style="float: left;" class="_menu-button" id="m_btn">
+            <a><div><img class="menu-button" src="images/menu.png"></div></a>
+        </div>
+        <div style="float: right;">
+            <a href="index.html"><div style="position: relative;"><img src="images/dp.jpg" style="height: 75px;width: 75px;"></div></a>
         </div>
     </div>
-    <div class="full">
-    <div class="row">
+    <div class="nav_menu" id="m_menu">
+        <a class="nav_btn" href="gallery.html"><div class="_nav_btn">GALLERY</div></a>
+        <a class="nav_btn" href="https://teentalks2017.wordpress.com/"><div class="_nav_btn">BLOG</div></a>
+        <a class="nav_btn" href="about.html"><div class="_nav_btn">ABOUT US</div></a>
+        <a class="nav_btn" href="contact.html"><div class="_nav_btn">CONTACT US</div></a>
+    </div>
+    <div class="container">
         <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdeIaLCHxzwytdhH0lWbj-lByJY9a7uNrHOlx-5llIjkkKjuA/viewform?usp=sf_link">
             Request a talk
         </a>
@@ -33,9 +32,23 @@
         </a>
         <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfz6iaUjr3N3qeqH7itcc_hQ3jDPcp-4dNTakpd0SiXMte_5g/viewform?usp=sf_link">
             Want to join us? 
-        </a>  
+        </a>        
+    </div>
+    <div class="footer">
+        <div style="float: left;" class="_linkbtn">
+            <a href="https://instagram.com/teentalks17"><div><img  class="linkbtn" src="images/igram.png"></div></a>
+        </div>
+        <div style="float: left;" class="_linkbtn">
+            <a href="https://facebook.com/teentalks17"><div><img  class="linkbtn" src="images/fbook.png"></div></a>
+        </div>
+        <div style="float: left;" class="_linkbtn">
+            <a href="https://www.youtube.com/channel/UCFGhVrj4YWOmTE6t4U45HlA"><div><img  class="linkbtn" src="images/ytube.png"></div></a>
+        </div>
+        <div style="float: right;">
+            <a class="nav_btn" href="#"><div class="linkbtn_wrd">EVENTS</div></a>
         </div>
     </div>
-    </div>
 </body>
-
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/script.js"></script>
+</html>

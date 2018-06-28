@@ -1,20 +1,88 @@
 <!DOCTYPE html5>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <script>
-      function gallery(imgs){
-          var image= document.getElementById("gall");
-          gall.src=imgs.src;
-      }
-  </script>
+<link rel="shortcut icon" href="images/dp.jpg">
+<script src="js/gallery.js"></script>
 <title>Teentalks</title>
 </head>
 <body onLoad="showSlides(1);">
+    <div class="header">
+        <div style="float: left;" class="_menu-button" id="m_btn">
+            <a><div><img class="menu-button" src="images/menu.png"></div></a>
+        </div>
+        <div style="float: right;">
+            <a href="index.html"><div style="position: relative;"><img src="images/dp.jpg" style="height: 75px;width: 75px;"></div></a>
+        </div>
+    </div>
+    <div class="nav_menu" id="m_menu">
+        <a class="nav_btn" href="gallery.html"><div class="_nav_btn">GALLERY</div></a>
+        <a class="nav_btn" href="https://teentalks2017.wordpress.com/"><div class="_nav_btn">BLOG</div></a>
+        <a class="nav_btn" href="about.html"><div class="_nav_btn">ABOUT US</div></a>
+        <a class="nav_btn" href="contact.html"><div class="_nav_btn">CONTACT US</div></a>
+    </div>
 <div class="container">
+<div class="full">
+<div class="row">
+    <div style="width: 80%; margin: auto;">
+        <img id="gall" src="images/img1.JPG" style="border-radius: 5px;" width=100% height=auto>
+    </div>    
+</div>
+<hr>
+<div class="container">
+    <h5>DPS E-City</h5>
+    <div class="row">
+        <div class="three columns"><img src="images/img5.JPG" width=100% height=auto onclick="showSlides(this);"></div>
+        <div class="three columns"><img src="images/img6.JPG" width=100% height=auto onclick="gallery(this);"></div>
+        <div class="three columns"><img src="images/img18.JPG" width=100% height=auto onclick="gallery(this);"></div>
+        <div class="three columns"><img src="images/img22.JPG" width=100% height=auto onclick="gallery(this);"></div>
+    </div>
+<hr><h5>Sparks Career Mentors Jan 18, 2018</h5>
+    <div class="row">
+        <div class="three columns"><img src="images/spark1.jpg" width=100% height=auto onclick="gallery(this);"></div>
+        <div class="three columns"><img src="images/spark2.jpg" width=100% height=auto onclick="gallery(this);"></div>
+        <div class="three columns"><img src="images/spark3.jpg" width=100% height=auto onclick="gallery(this);"></div>
+        <div class="three columns"><img src="images/spark4.jpg" width=100% height=auto onclick="gallery(this);"></div>
+    </div>
+<hr><h5>Sparks Career Mentors SparkPlug Apr 20,2018</h5>
+    <div class="row">
+        <div class="three columns"><img src="images/plug1.jpg" width=100% height=auto onclick="gallery(this);"></div>
+        <div class="three columns"><img src="images/plug2.jpg" width=100% height=auto onclick="gallery(this);"></div>
+    </div>
+<hr><h5>Concorde Manhattans Apartments Oct 29,2017</h5>
+    <div class="row">
+        <div class="three columns"><img src="images/Concorde1.jpg" width=100% height=auto onclick="gallery(this);"></div>
+        <div class="three columns"><img src="images/Concorde2.jpg" width=100% height=auto onclick="gallery(this);"></div>
+        <div class="three columns"><img src="images/Concorde3.jpg" width=100% height=auto onclick="gallery(this);"></div>
+        <div class="three columns"><img src="images/Concorde4.jpg" width=100% height=auto onclick="gallery(this);"></div>
+    </div>
+    </div>
+</div>
+</div>
+    <div class="footer">
+        <div style="float: left;" class="_linkbtn">
+            <a href="https://instagram.com/teentalks17"><div><img  class="linkbtn" src="images/igram.png"></div></a>
+        </div>
+        <div style="float: left;" class="_linkbtn">
+            <a href="https://facebook.com/teentalks17"><div><img  class="linkbtn" src="images/fbook.png"></div></a>
+        </div>
+        <div style="float: left;" class="_linkbtn">
+            <a href="https://www.youtube.com/channel/UCFGhVrj4YWOmTE6t4U45HlA"><div><img  class="linkbtn" src="images/ytube.png"></div></a>
+        </div>
+        <div style="float: right;">
+            <a class="nav_btn" href="#"><div class="linkbtn_wrd">EVENTS</div></a>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/script.js"></script>
+<script src="js/gallery.js"></script>
+</html>
+
+<!--<div class="container">
     <div class"row">
         <div class="two columns" style="padding: 35px;"><a href="index.html"><img src="images/dp.jpg" height=100px width=100px></a></div>
         <div class="ten columns">
@@ -65,7 +133,5 @@
     </div>
     </div>
 </div>
-</div>
-<hr>
-</body>
-</html>
+</div>-->
+
